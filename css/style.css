@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+
+:root{
+    /*Primary*/
+    --yellow: hsl(47, 88%, 63%);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 1rem;
+    background-color: var(--yellow);
+}
+
+.card{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 15px;
+    background-color: var(--white);
+    font-family: 'Figtree',sans-serif;
+    box-shadow: 5px 5px var(--black);
+    transition: all .1s linear;
+}
+
+.card__img{
+    width: 100%;
+}
+
+.card__img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__info{
+    margin-top: 2rem;
+}
+
+.text1{
+   margin-top: 1.2rem;
+   font-size: .8rem;
+}
+
+.card__info h1{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.card__info h1:hover{
+    color: var(--yellow);
+}
+
+
+
+.text2{
+    font-size: .9rem;
+    color: var(--grey);
+    line-height: 1.3rem;
+
+}
+
+span{
+    padding: 0.5rem .7rem;
+    font-size: .8rem;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: var(--yellow);
+}
+
+.card__info__person{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card__info__person p{
+    font-size: .9rem;
+    font-weight: 800;
+}
+
+.person__img{
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.person__img img{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width:400px){
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 350px;
+    }
+}
